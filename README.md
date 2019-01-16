@@ -1,2 +1,2 @@
-# Smarthings
-Repo for Smarthings Device Handlers
+# SmartThings
+Repo for Smartthings Device Handlers
