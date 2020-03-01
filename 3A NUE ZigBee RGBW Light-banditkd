@@ -9,6 +9,7 @@ on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expres
 for the specific language governing permissions and limitations under the License.
 Updated by Kevin X- 3A Smart Home on 1st Jun 2018
 Updated by Banditkd on 16th June 2019 to include looping/blinking/default colour
+Updated by Banditkd on 1st March 202 to refresh so status in new app shows as online
 */
 
 metadata {
@@ -303,5 +304,8 @@ device.endpointId ="0B"
     sendEvent(name: "pulse", value: "off", descriptionText: "Pulse mode set to Off", displayed: true, isChange: true)
 }
 
+def ping() {
+  return zigbee.onOffRefresh()
+}
 
 // Please copy the device handler end of this line
